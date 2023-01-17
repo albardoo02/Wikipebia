@@ -1,5 +1,6 @@
 # Wikipebia Config version: 1.0
 # カラーコードが使用可能です
+# %prefix -> prefix
 
 # プラグインのPrefixを設定します。
 prefix: "Wikipebia"
@@ -23,6 +24,9 @@ Console:
 # プレイヤーに権限がない場合に表示されるメッセージ
 Error:
   - '&cあなたには権限がありません!'
+
+Reload:
+  - "&7[&a%prefix&7] &eConfigを再読み込みしました"
 
 # URL設定時
 Set:
