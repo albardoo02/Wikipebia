@@ -15,9 +15,6 @@ permissions:
   wikipebia.*:
     children:
       wikipebia.command.admin: true
-      wikipebia.command.member: true
     default: op
   wikipebia.command.admin:
-    default: op
-  wikipebia.command.member:
     default: op

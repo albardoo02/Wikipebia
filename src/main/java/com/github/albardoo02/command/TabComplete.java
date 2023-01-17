@@ -1,5 +1,6 @@
-package com.github.albardoo02;
+package com.github.albardoo02.command;
 
+import com.github.albardoo02.Wikipebia;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;

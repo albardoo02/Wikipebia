@@ -1,10 +1,57 @@
-URL: "google.com"
-ルール:
-  URL: "ruleのurl"
+# Wikipebia Config version: 1.0
+# カラーコードが使用可能です
 
-message:
-  default:
-    URL: default
+# プラグインのPrefixを設定します。
+prefix: "Wikipebia"
 
+# /wikiで表示されるリンクを設定します
+URL: "https://github.com/"
+
+# 登録したURLの一覧
+# デフォルト
+# message:
+#   GitHub:
+#     URL: https://github.com/
+Links:
+  GitHub:
+    URL: https://github.com/
+
+# コンソールから実行したときのメッセージ
+Console:
+  - '&cコンソールから実行することはできません'
+
+# プレイヤーに権限がない場合に表示されるメッセージ
+Error:
+  - '&cあなたには権限がありません!'
+
+# URL設定時
+Set:
+  - '&7[&a%prefix&7] &e/wiki set <URL>'
+
+# 引数が1つのとき
+Add_1:
+  - '&7[&a%prefix&7] &e/wiki add <設定名> <URL>'
+
+# 引数が2つのとき
+# 引数3 -> %args1
+Add_2:
+  - '&7[&a%prefix&7] &e/wiki add %args1 <URL>'
+
+# 引数が3つのとき
+Add_3:
+  - '&7[&a%prefix&7] &d%args1 &eのリンクを &d%args2 &eで登録しました'
+
+# 引数1 -> %args0
+# Wikiのリンク -> %url
+Link:
+  - '&e%args0のWikiリンク'
+  - '&b%url'
+
+
+# TAB補完に表示されるリスト
+# messageで設定した名前と同じにしてください
+# 表示したくない場合はその文字列を削除してください
+#TAB:
+#  - 'GitHub'
 TAB:
-  - 'default'
+  - 'GitHub'
