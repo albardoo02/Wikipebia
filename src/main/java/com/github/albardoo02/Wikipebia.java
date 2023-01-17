@@ -25,5 +25,6 @@ public final class Wikipebia extends JavaPlugin {
     public void onDisable() {
         // Plugin shutdown logic
         getLogger().info("プラグインが停止しました");
+        saveConfig();
     }
 }
