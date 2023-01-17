@@ -1,10 +1,17 @@
-URL: "google.com"
-ルール:
-  URL: "ruleのurl"
-
+# /wikiで表示されるリンクを設定します
+URL: "https://github.com/"
+# 登録したURLの一覧
+# デフォルト
+# message:
+#   GitHub:
+#     URL: https://github.com/
 message:
-  default:
-    URL: default
-
+  GitHub:
+    URL: https://github.com/
+# TAB補完に表示されるリスト
+# messageで設定した名前と同じにしてください
+# 表示したくない場合はその文字列を削除してください
+#TAB:
+#  - 'GitHub'
 TAB:
-  - 'default'
+  - 'GitHub'
