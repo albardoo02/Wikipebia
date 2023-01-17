@@ -38,15 +38,18 @@ public class WikiCommandExecutor implements CommandExecutor {
             else if (args[0].equalsIgnoreCase("set")) {
                 if (sender.hasPermission("wikipebia.command.admin")) {
                     if (args.length == 1) {
-                        for (String line : plugin.getConfig().getStringList("Set")) {
+                        for (String line : plugin.getConfig().getStringList("Set_1")) {
                             sender.sendMessage(ChatColor.translateAlternateColorCodes('&',line.replace("%prefix", prefix)));
                             return true;
                         }
                     }
                     if (args[1].equalsIgnoreCase(args[1])) {
-                        sender.sendMessage("URLを" + args[1] + "に設定しました");
+                        for (String line : plugin.getConfig().getStringList("Set_2")) {
+                            sender.sendMessage(ChatColor.translateAlternateColorCodes('&',line.replace("%args1",args[1])).replace("%prefix",prefix));
+                        }
                         plugin.getConfig().set("URL", args[1]);
                         plugin.saveConfig();
+                        return true;
                     }
                 }
                 else {

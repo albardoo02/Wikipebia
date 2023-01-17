@@ -29,8 +29,12 @@ Reload:
   - "&7[&a%prefix&7] &eConfigを再読み込みしました"
 
 # URL設定時
-Set:
+Set_1:
   - '&7[&a%prefix&7] &e/wiki set <URL>'
+
+# URL設定完了時
+Set_2:
+  - '&7[&a%prefix&7] &eURLを &d%args1 &eに設定しました'
 
 # 引数が1つのとき
 Add_1:
