@@ -48,10 +48,13 @@ Link:
   - '&b%url'
 
 
+message:
+  GitHub:
+    URL: https://github.com/
 # TAB補完に表示されるリスト
 # messageで設定した名前と同じにしてください
 # 表示したくない場合はその文字列を削除してください
 #TAB:
 #  - 'GitHub'
 TAB:
-  - 'GitHub'
+  - GitHub
