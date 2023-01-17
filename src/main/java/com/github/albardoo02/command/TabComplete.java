@@ -40,7 +40,7 @@ public class TabComplete implements TabCompleter {
                 case "set":
                     completions.add("<URL>");
                     break;
-                case "set2":
+                case "add":
                     completions.add("<設定名>");
                     break;
             }
