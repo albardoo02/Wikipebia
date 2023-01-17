@@ -15,3 +15,7 @@ wikiコマンド拡張プラグイン
 `/wiki add <設定名> <URL>`: Wikiの名前とURLを設定します
 
 Ex) `/wiki add github https://github.com/`: GitHubのリンクを設定します
+
+
+## 権限
+`wikipebia.*`: Wikipebiaの全権限
