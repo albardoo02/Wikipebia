@@ -1,0 +1,10 @@
+URL: "google.com"
+ルール:
+  URL: "ruleのurl"
+
+message:
+  default:
+    URL: default
+
+TAB:
+  - 'default'
