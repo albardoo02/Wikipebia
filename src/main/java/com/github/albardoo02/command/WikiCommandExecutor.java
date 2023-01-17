@@ -92,7 +92,7 @@ public class WikiCommandExecutor implements CommandExecutor {
                         for (String line : plugin.getConfig().getStringList("Add_3")) {
                             sender.sendMessage(ChatColor.translateAlternateColorCodes('&',line.replace("%prefix", prefix)).replace("%args1",args[1]).replace("%args2",args[2]));
                         }
-                        plugin.getConfig().set("Link." + args[1] + ".URL", args[2]);
+                        plugin.getConfig().set("Links." + args[1] + ".URL", args[2]);
                         List<String> TAB = plugin.getConfig().getStringList("TAB");
                         TAB.add(args[1]);
                         plugin.getConfig().set("TAB",TAB);

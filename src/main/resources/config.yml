@@ -12,10 +12,10 @@ URL: "https://github.com/"
 # デフォルト
 # Links:
 #   GitHub:
-#     URL: https://github.com/
+#     URL: "https://github.com/"
 Links:
   GitHub:
-    URL: https://github.com/
+    URL: "https://github.com/"
 
 # コンソールから実行したときのメッセージ
 Console:
@@ -61,4 +61,4 @@ Link:
 #TAB:
 #  - 'GitHub'
 TAB:
-  - GitHub
+  - "GitHub"
